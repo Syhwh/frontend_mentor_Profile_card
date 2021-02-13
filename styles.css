@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+	--primary-dark-cyan:hsl(185, 75%, 39%);
+	--primary-very-dark-ds-blue: hsl(229, 23%, 23%);
+	--primary-dark-grayish-blue: hsl(227, 10%, 46%);
+	--neutral-dark-gray: hsl(0, 0%, 59%)
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*, *::after, *::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+body{
+	font-family: 'Kumbh Sans', sans-serif;
+	background-color: var(--primary-dark-cyan);
+	font-size: 18px;
+}
+
+
+.container{
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+
+.card{
+	width: 375px;
+	border-radius: 16px;
+	overflow: hidden;
+	text-align: center;
+	background-color: white;
+	position: relative;
+}
+
+.card__header{
+	background: url('./images/bg-pattern-card.svg');
+	background-size: cover;
+	height: 150px;
+}
+
+.card__header__picture_container{
+	margin: -55px auto 30px auto;
+	border-radius: 50%;
+	border:5px solid rgb(249, 249, 249);
+	overflow: hidden;
+	width: 30%;
+}
+
+.image_profile{
+width: 100%;
+display: block;
+height: auto;
+}
+
+.card__content{
+	border-bottom: 1px solid rgb(210, 210, 210);
+	margin: auto;
+	text-align: center;
+
+}
+
+.card__content_name{
+	color: var(	--primary-very-dark-ds-blue);
+	margin-bottom: 20px;
+}
+
+.card__content_age{
+color: var(--primary-dark-grayish-blue);
+font-weight: 400;
+margin-left: 10px;
+}
+
+.card__content_city{
+	color: var(--primary-dark-grayish-blue);
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+
+.card__footer{
+	display: flex;
+	margin: 20px auto 10px auto;
+	padding: 0 30px;
+}
+
+.card__footer_social{
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+}
+
+.card__footer_social h2{
+	color: var(	--primary-very-dark-ds-blue);
+	margin: 5px auto;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.card__footer_social p{
+	color:var(	--primary-dark-grayish-blue);
+	font-size: .7rem;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	margin: 15px auto;
+}
+
+.circles, .circle__top,.circle__bottom {
+	position: absolute;
+	/* overflow: hidden; */
+}
+
+.circle__top{
+	/* border: 2px dashed red; */
+	bottom: -10rem;
+	left: -60rem;
+	transform: rotate(2deg) scale(.9) translate(-10px, -10px);
+	opacity: .8;
+
+	/* background-color: green; */
+}
+
+.circle__bottom{
+	border: 2px dashed blue;
+	top:10px;
+	/* background-color: grey; */
+}
