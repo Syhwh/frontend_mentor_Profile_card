@@ -31,21 +31,24 @@ body{
 	height: 100vh;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .card{
-	width: 375px;
+	width: 320px;
+	height: 370px;
 	border-radius: 16px;
 	overflow: hidden;
 	text-align: center;
 	background-color: white;
 	position: relative;
+	box-shadow: 22px 23px 46px 21px rgba(0,0,0,0.15);
 }
 
 .card__header{
 	background: url('./images/bg-pattern-card.svg');
 	background-size: cover;
-	height: 150px;
+	height: 140px;
 }
 
 .card__header__picture_container{
@@ -63,15 +66,15 @@ height: auto;
 }
 
 .card__content{
-	border-bottom: 1px solid rgb(210, 210, 210);
+	border-bottom: 0.8px solid rgba(220, 220, 220, 0.543);
 	margin: auto;
 	text-align: center;
-
 }
 
 .card__content_name{
 	color: var(	--primary-very-dark-ds-blue);
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	font-size: 1rem;
 }
 
 .card__content_age{
@@ -83,14 +86,15 @@ margin-left: 10px;
 .card__content_city{
 	color: var(--primary-dark-grayish-blue);
 font-weight: 400;
-margin-bottom: 20px;
+font-size:.8rem;
+margin-bottom: 28px;
 }
 
 
 .card__footer{
 	display: flex;
-	margin: 20px auto 10px auto;
-	padding: 0 30px;
+	margin: 25px auto 10px auto;
+	padding: 0 25px;
 }
 
 .card__footer_social{
@@ -102,34 +106,53 @@ margin-bottom: 20px;
 .card__footer_social h2{
 	color: var(	--primary-very-dark-ds-blue);
 	margin: 5px auto;
-	font-size: 1rem;
-	font-weight: 700;
+	font-size: 1.1rem;
+
 }
 .card__footer_social p{
 	color:var(	--primary-dark-grayish-blue);
-	font-size: .7rem;
+	font-size: .6rem;
 	font-weight: 400;
 	letter-spacing: 1.1px;
-	margin: 15px auto;
+	margin-top: 8px;
 }
 
 .circles, .circle__top,.circle__bottom {
 	position: absolute;
-	/* overflow: hidden; */
 }
 
 .circle__top{
-	/* border: 2px dashed red; */
 	bottom: -10rem;
-	left: -60rem;
-	transform: rotate(2deg) scale(.9) translate(-10px, -10px);
+	left: -55rem;
+	transform:  scale(.9) translate(-10px, -10px);
 	opacity: .8;
-
-	/* background-color: green; */
 }
 
 .circle__bottom{
-	border: 2px dashed blue;
 	top:10px;
-	/* background-color: grey; */
+	left: -110px;
+	opacity: .8;
+}
+
+@media (min-width: 1440px){
+
+	.card{
+		width: 350px;
+		height: 372px;
+	}
+	.circle__top{
+		bottom: -10rem;
+		left: -60rem;
+
+		opacity: .8;
+	}
+
+	.circle__bottom{
+		top:10px;
+	left: -30px;
+
+	}
+
+
+
 }
