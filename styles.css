@@ -52,7 +52,7 @@ body{
 }
 
 .card__header__picture_container{
-	margin: -55px auto 25px auto;
+	margin: -55px auto 20px auto;
 	border-radius: 50%;
 	border:5px solid rgb(249, 249, 249);
 	overflow: hidden;
