@@ -12,15 +12,15 @@ html{
 }
 
 *, *::after, *::before{
+	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
 }
 
 
 body{
-	font-family: 'Kumbh Sans', sans-serif;
 	background-color: var(--primary-dark-cyan);
+	font-family: 'Kumbh Sans', sans-serif;
 	font-size: 18px;
 }
 
@@ -30,19 +30,19 @@ body{
 	display: flex;
 	height: 100vh;
 	justify-content: center;
-	position: relative;
 	overflow: hidden;
+	position: relative;
 }
 
 .card{
-	width: 320px;
-	height: 370px;
-	border-radius: 16px;
-	overflow: hidden;
-	text-align: center;
 	background-color: white;
-	position: relative;
+	border-radius: 16px;
 	box-shadow: 22px 23px 46px 21px rgba(0,0,0,0.15);
+	height: 370px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 320px;
 }
 
 .card__header{
@@ -52,17 +52,17 @@ body{
 }
 
 .card__header__picture_container{
-	margin: -55px auto 20px auto;
-	border-radius: 50%;
 	border:5px solid rgb(249, 249, 249);
+	border-radius: 50%;
+	margin: -55px auto 20px auto;
 	overflow: hidden;
 	width: 30%;
 }
 
 .image_profile{
-width: 100%;
-display: block;
-height: auto;
+	display: block;
+	height: auto;
+	width: 100%;
 }
 
 .card__content{
@@ -73,21 +73,21 @@ height: auto;
 
 .card__content_name{
 	color: var(	--primary-very-dark-ds-blue);
-	margin-bottom: 10px;
 	font-size: 1rem;
+	margin-bottom: 10px;
 }
 
 .card__content_age{
-color: var(--primary-dark-grayish-blue);
-font-weight: 400;
-margin-left: 10px;
+	color: var(--primary-dark-grayish-blue);
+	font-weight: 400;
+	margin-left: 10px;
 }
 
 .card__content_city{
 	color: var(--primary-dark-grayish-blue);
-font-weight: 400;
-font-size:.8rem;
-margin-bottom: 28px;
+	font-size:.8rem;
+	font-weight: 400;
+	margin-bottom: 28px;
 }
 
 
@@ -124,32 +124,31 @@ margin-bottom: 28px;
 .circle__top{
 	bottom: -10rem;
 	left: -55rem;
-	transform:  scale(.9) translate(-10px, -10px);
 	opacity: .8;
+	transform:  scale(.9) translate(-10px, -10px);
 }
 
 .circle__bottom{
-	top:10px;
 	left: -110px;
 	opacity: .8;
+	top:10px;
 }
 
 @media (min-width: 1440px){
 
 	.card{
-		width: 350px;
 		height: 372px;
+		width: 350px;
 	}
 	.circle__top{
 		bottom: -10rem;
 		left: -60rem;
-
 		opacity: .8;
 	}
 
 	.circle__bottom{
 		top:10px;
-	left: -30px;
+		left: -30px;
 
 	}
 
