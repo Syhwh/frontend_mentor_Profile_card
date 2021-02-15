@@ -1,0 +1,14 @@
+@mixin image {
+	.card__header__picture_container {
+		border: 5px solid rgb(249, 249, 249);
+		border-radius: 50%;
+		margin: -55px auto 25px auto;
+		overflow: hidden;
+		width: 33%;
+		.image_profile {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+	}
+}

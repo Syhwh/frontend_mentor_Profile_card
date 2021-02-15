@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-color: #19a2ae;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.container .circles {
+  position: absolute;
+}
+
+.container .circles__circle-top {
+  position: absolute;
+  bottom: -4rem;
+  left: -55rem;
+  opacity: 0.8;
+  -webkit-transform: scale(0.9) translate(-10px, -10px);
+          transform: scale(0.9) translate(-10px, -10px);
+}
+
+@media (min-width: 1440px) {
+  .container .circles__circle-top {
+    bottom: -10rem;
+    left: -60rem;
+  }
+}
+
+.container .circles__circle-bottom {
+  position: absolute;
+  left: -90px;
+  opacity: 0.8;
+  top: -60px;
+  -webkit-transform: translate(50px, 10px);
+          transform: translate(50px, 10px);
+}
+
+@media (min-width: 1440px) {
+  .container .circles__circle-bottom {
+    top: 10px;
+    left: -90px;
+    -webkit-transform: translate(35px, 30px);
+            transform: translate(35px, 30px);
+  }
+}
+
+.container .card {
+  background-color: white;
+  border-radius: 16px;
+  -webkit-box-shadow: 22px 23px 46px 21px rgba(0, 0, 0, 0.15);
+          box-shadow: 22px 23px 46px 21px rgba(0, 0, 0, 0.15);
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 320px;
+}
+
+@media (min-width: 1440px) {
+  .container .card {
+    height: 372px;
+    width: 350px;
+  }
+}
+
+.container .card__header {
+  background: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  height: 140px;
+}
+
+.container .card .card__header__picture_container {
+  border: 5px solid #f9f9f9;
+  border-radius: 50%;
+  margin: -55px auto 25px auto;
+  overflow: hidden;
+  width: 33%;
+}
+
+.container .card .card__header__picture_container .image_profile {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container .card .card__content {
+  border-bottom: 0.8px solid rgba(220, 220, 220, 0.543);
+  text-align: center;
+}
+
+.container .card .card__content_name {
+  color: #2d3248;
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.container .card .card__content_age {
+  color: #6a6f81;
+  font-weight: 200;
+  margin-left: 5px;
+}
+
+.container .card .card__content_city {
+  color: #6a6f81;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+.container .card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 10px 0;
+  padding: 0 25px;
+}
+
+.container .card .card__footer_social {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+.container .card .card__footer_social h2 {
+  color: #2d3248;
+  margin: 5px 0;
+  font-size: 1.125rem;
+}
+
+.container .card .card__footer_social p {
+  color: #6a6f81;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  margin-top: 8px;
+}

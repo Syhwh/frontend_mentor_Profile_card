@@ -1,0 +1,43 @@
+@import "config", "image", "cardContent", "cardFooter", "circles", "desktop";
+
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	background-color: color(primary-dark-cyan);
+	overflow: hidden;
+
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	@include circles;
+
+	.card {
+		background-color: white;
+		border-radius: 16px;
+		box-shadow: 22px 23px 46px 21px rgba(0, 0, 0, 0.15);
+		height: 370px;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		width: 320px;
+		@include desktop {
+			height: 372px;
+			width: 350px;
+		}
+
+		&__header {
+			background: url("../images/bg-pattern-card.svg");
+			background-size: cover;
+			height: 140px;
+		}
+		@include image;
+		@include cardContent;
+		@include cardFooter;
+	}
+}

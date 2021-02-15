@@ -1,0 +1,33 @@
+@import "desktop";
+
+@mixin circles {
+	.circles {
+		position: absolute;
+
+		&__circle-top {
+			position: absolute;
+			bottom: -4rem;
+			left: -55rem;
+			opacity: 0.8;
+			transform: scale(0.9) translate(-10px, -10px);
+			@include desktop {
+				bottom: -10rem;
+				left: -60rem;
+			}
+		}
+
+		&__circle-bottom {
+			position: absolute;
+			left: -90px;
+			opacity: 0.8;
+			top: -60px;
+			transform: translate(50px, 10px);
+			@include desktop {
+				top: 10px;
+				left: -90px;
+				transform: translate(35px, 30px);
+
+			}
+		}
+	}
+}

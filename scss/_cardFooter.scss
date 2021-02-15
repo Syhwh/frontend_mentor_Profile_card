@@ -1,0 +1,24 @@
+@mixin cardFooter {
+	.card__footer {
+		display: flex;
+		margin: 20px 0 10px 0;
+		padding: 0 25px;
+		&_social {
+			display: inline-block;
+			margin: auto;
+			text-align: center;
+			h2 {
+				color: color(primary-very-dark-ds-blue);
+				margin: 5px 0;
+				font-size: 1.125rem;
+			}
+			p {
+				color: color(primary-dark-grayish-blue);
+				font-size: 0.6rem;
+				font-weight: 400;
+				letter-spacing: 1.1px;
+				margin-top: 8px;
+			}
+		}
+	}
+}
