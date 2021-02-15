@@ -100,7 +100,7 @@ body {
 .container .card .card__header__picture_container {
   border: 5px solid #f9f9f9;
   border-radius: 50%;
-  margin: -55px auto 25px auto;
+  margin: -60px auto 10px auto;
   overflow: hidden;
   width: 33%;
 }
